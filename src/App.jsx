@@ -11,6 +11,7 @@ const App = () => {
       const newColors = new Values(color).all(10)
       setColors(newColors)
     } catch (error) {
+      toast.dismiss()
       toast.error(error.message)
     }
   }
